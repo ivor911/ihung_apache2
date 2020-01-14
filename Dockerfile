@@ -1,10 +1,10 @@
 FROM alpine:3.6
 
-LABEL maintainer="Jeeva S. Chelladhurai <sjeeva@gmail.com>"
+LABEL maintainer="Ivor Hung <ivor911@gmail.com>"
 
 RUN apk add --no-cache apache2 && \
     mkdir -p /run/apache2 && \
-    echo "<html><h1>Docker Cookbook</h1></html>" > \
+    echo "<html><h1>Copy from Docker Cookbook</h1> <h1>This is a Hello World html file.</h1></html>" > \
         /var/www/localhost/htdocs/index.html
 
 EXPOSE 80
