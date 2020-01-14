@@ -4,7 +4,7 @@ LABEL maintainer="Ivor Hung <ivor911@gmail.com>"
 
 RUN apk add --no-cache apache2 && \
     mkdir -p /run/apache2 && \
-    echo "<html><h1>Copy from Docker Cookbook</h1> <h1>A Hello World html file.</h1></html>" > \
+    echo "<html><h1>Copy from Docker Cookbook</h1> <h1>A new Hello World html file.</h1></html>" > \
         /var/www/localhost/htdocs/index.html
 
 EXPOSE 80
